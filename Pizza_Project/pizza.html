@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Pizza Menu</title>
+        <META HTTP-EQUIV="Content-Type" CONTENT="text/html" charset="UTF-8">
+            <meta content="width=device-width,initial-scale=1.0" name="viewport">
+            <script src="JS/pizza.js" defer></script>
+            <link rel="stylesheet" type="text/css" href="CSS/pizza.css" />
+    </head>
+    <body>
+
+        <div id="menuBG">
+            <h1 {style="margin: 0 0px 0 20px;"}>Pizza Menu Tutorial</h1>
+            <input id="btnOrder" type="button" onclick="get.Receipt()" value="Place Order">
+            <form id="frmMenu">
+                <div class="menu left">
+                    <h3>Size:</h3>
+                    <input class="size" type="radio" name="small" value="Small Pizza">Small Pizza<br>
+                    <input class="size" type="radio" name="Size" value="Personal Pizza">Personal Pizza<br>
+                    <input class="size" type="radio" name="Medium" value="Medium Pizza">Medium Pizza<br>
+                    <input class="size" type="radio" name="Large" value="Large Pizza">LargePizza<br>
+                    <input class="size" type="radio" name="Extra-Large" value="Extra Large Pizza">Extra Large Pizza<br>
+                    <input class="size" type="radio" name="Family Pizza" value="Family Pizza">Family Pizza<br>
+
+                 </div>
+                 <div class="menu right">
+                    <h3>Topping:</h3>
+                    <input class="toppings" type="checkbox" name="Topping" value="Pepperoni">Pepperoni<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Chicken">Chicken<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Champignon">Champignon<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Salami">Salami<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Cheese">Cheese<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Ham">Ham<br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Tomatoes">Tomatoes<br>
+                 </div>
+                 <div id="cart">
+                    <div id="showText"></div>
+                    <div id="totalPrice"></div>
+                 </div>
+            </form>
+        </div>
+
+        <form id="myForm">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="adress">Adress:</label><br>
+            <input type="text" id="adress" name="adress"></br>
+            <label for="phnumber">Phone Number:</label><br>
+            <input type="text" id="phnumber" name="phnumber"><br>
+            <button onclick="myForm">Confirm</button>
+          </form>
+        <script>
+            document.body.classList.add("fade-out");
+          </script>
+    </body>
+</html>
